@@ -37,15 +37,18 @@ int main ()
     struct Student Highest;
     struct Student Lowest;
     int high = 0,low = 0;
-    for(int i=0;i<3;i++){
+    for(int i=0; i<3; i++)
+    {
         scanf("%s %d %d %c %d",&men[i].name,&men[i].marks,&men[i].roll,&men[i].section,&men[i].whichClass);
-        if(high < men[i].marks){
+        if(high < men[i].marks)
+        {
             high = men[i].marks;
             Highest = men[i];
         }
         low = men[0].marks;
         Lowest = men[0];
-        if(low > men[i].marks){
+        if(low > men[i].marks)
+        {
             low = men[i].marks;
             Lowest = men[i];
         }
